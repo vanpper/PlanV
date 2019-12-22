@@ -1,0 +1,263 @@
+<link rel="stylesheet" type="text/css" href="css/NuevoPedido.css">
+<div id="nuevoPedido" style="height:10px;margin-left:0px;float:left;width: 100%;">
+	<div style="width:100%;height:470px;float:left;border-style: solid;border-width: 2px 0px 0px 0px;border-color: var(--second-color);">
+		<div style="width:100%;height:470px; float:left;background-color: rgba(35,35,35,1);background-color: rgba(240,240,240,1);">
+			<div id="opcionesPedido">
+			<form action="ServletPedido" method="POST">
+			<div class="campo" style="margin-top:0px">
+				<label class="tituloCampo">Tipo de Producto:</label>
+				<select onchange="mostrarOpciones()" id="tipos" name="tipoProducto" class="opcionesCampo">
+					<option value="1">Cuaderno</option>
+					<option value="2">Agenda</option>
+					<option value="3">Calendario</option>
+					<option value="4">Tarjeta</option>
+				</select>
+			</div>
+			<script>
+			function mostrarOpciones(){
+				document.getElementById("opciones1").style.display="none";
+				document.getElementById("opciones3").style.display="none";
+				document.getElementById("opciones4").style.display="none";
+				document.getElementById("imagenPedido").style.display="none";
+				document.getElementById("imagenTarjeta").style.display="none";
+				if(document.getElementById("tipos").value == "1" || document.getElementById("tipos").value == "2"){
+					document.getElementById("opciones1").style.display="initial";
+					document.getElementById("imagenPedido").style.display="initial";
+				}
+				if(document.getElementById("tipos").value == "3"){
+					document.getElementById("opciones3").style.display="initial";
+					cambiarTam();
+				}
+				if(document.getElementById("tipos").value == "4"){
+					document.getElementById("opciones4").style.display="initial";
+					document.getElementById("imagenTarjeta").style.display="initial";
+					cambiarTarj();
+				}
+			}
+			
+			</script>
+			<div id="opciones1">
+			<div class="campo">
+				<label class="tituloCampo">Tamaño:</label>
+				<select name="tamProducto" id="tamCuaderno" onchange="cambiarTam()" class="opcionesCampo">
+					<option value="21x29.7">21cm x 29.7cm</option>
+					<option value="14.8x21">14.8cm x 21cm</option>
+					<option value="18x9">18cm x 9cm</option>
+					<option value="11.5x15">11.5cm x 15cm</option>
+				</select>
+			</div>
+			<div class="campo">
+				<label class="tituloCampo">Orientacion Anillado:</label>
+				<select name="orientacionProducto" id="orientacion" onchange="cambiarTam()" class="opcionesCampo">
+					<option value="Vertical">Vertical</option>
+					<option value="Horizontal">Horizontal</option>
+				</select>
+			</div>
+			<div class="campo">
+				<label class="tituloCampo">Tipo Anillado:</label>
+				<select name="tipoAnillado" id="tipo" onchange="cambiarTam()" class="opcionesCampo">
+					<option value="1">Doble Metal</option>
+					<option value="2">Metal</option>
+					<option value="3">Plastico</option>
+				</select>
+			</div>
+			</div>
+			<div id="opciones3">
+			<div class="campo">
+				<label class="tituloCampo">Tamaño:</label>
+				<select name="tamProducto3" id="tamCuaderno3" onchange="cambiarTam()" class="opcionesCampo">
+					<option value="21x29.7">21cm x 29.7cm</option>
+					<option value="14.8x21">14.8cm x 21cm</option>
+					<option value="18x9">18cm x 9cm</option>
+					<option value="11.5x15">11.5cm x 15cm</option>
+				</select>
+			</div>
+			<div class="campo">
+				<label class="tituloCampo">Orientacion Anillado:</label>
+				<select name="orientacionProducto3" id="orientacion3" onchange="cambiarTam()" class="opcionesCampo">
+					<option value="Vertical">Vertical</option>
+					<option value="Horizontal">Horizontal</option>
+				</select>
+			</div>
+			<div class="campo">
+				<label class="tituloCampo" style>Tipo Anillado:</label>
+				<select name="tipoAnillado3" id="tipo3" onchange="cambiarTam()" class="opcionesCampo">
+					<option value="1">Doble Metal</option>
+					<option value="2">Metal</option>
+					<option value="3">Plastico</option>
+				</select>
+			</div>
+			</div>
+			<div id="opciones4">
+			<div class="campo">
+				<label class="tituloCampo">Tamaño:</label>
+				<select name="tamProducto4" id="tamCuaderno4" onchange="cambiarTarj()" class="opcionesCampo">
+					<option value="8.8x5.5">8.8cm x 5.5cm</option>
+					<option value="14.8x21">14.8cm x 21cm</option>
+					<option value="18x9">18cm x 9cm</option>
+					<option value="11.5x15">11.5cm x 15cm</option>
+				</select>
+			</div>
+			<div class="campo">
+				<label class="tituloCampo">Doble Faz:</label>
+				<select name="orientacionProducto4" id="orientacion4" onchange="cambiarTarj()" class="opcionesCampo">
+					<option value="1">Si</option>
+					<option value="2">No</option>
+				</select>
+			</div>
+			<div class="campo">
+				<label class="tituloCampo">Tipo de punta:</label>
+				<select name="tipoAnillado4" id="tipo4" onchange="cambiarTarj()" class="opcionesCampo">
+					<option value="1">Recta</option>
+					<option value="2">Redondeada</option>
+				</select>
+			</div>
+
+			</div>
+			<div class="campo" style="height:140px">
+				<label class="tituloCampo">¿Como te gustaria que fuera?</label>
+				<textarea  name="descripcionProducto" spellcheck="false" class="descCampo"></textarea>
+			</div>
+			<div style="width:100%">
+			<button type="submit" name="btnAgregar"  class="btNuevoPedido">Agregar Pedido</button>
+			</div>
+			</form>
+			</div>
+			<div id="imagenPedido" style="float:left;width:50%;height:450px;overflow: hidden;">
+				<div style="background-image:url('./img/fondo.jpg');background-size: cover; background-position: center;width:95%;max-width: 600px;height: 400px;float:left;overflow: hidden;margin:auto;margin-top:35px;float:none">
+		          <div style="width: 100%;height: 100%;transform: rotate(8deg) scale(1.1) translate(-40px, 20px)">
+		          <div id="cuaderno" style="background-color: rgba(240,240,240,1);background-image: url('./img/patron.jpg');background-size:200px 200px ;width: 200px;margin-left:auto;height: 300px;margin-top: 10px;float:none;margin:auto;box-shadow: -2px 2px 1px 0px rgba(100,100,100,.3);border: 1px outset;
+		          border-color: rgba(0,0,0,.1);border-style: outset;">
+		            
+		          </div>
+          		  </div>
+        		</div>
+        	</div>
+        	<div id="imagenTarjeta" style=" float:left;width:50%;height:450px;overflow: hidden;">
+				<div style="background-image:url('./img/fondo.jpg');background-size: cover; background-position: center;width:95%;max-width: 600px;height: 400px;float:left;overflow: hidden;margin:auto;margin-top:35px;float:none;transform: scale(1.4);">
+		          <div style="width: 100%;height: 100%;transform: rotate(8deg) scale(1.1) translate(-40px, 20px);display: grid;">
+		          <div id="cuaderno2" style="background-color: rgba(240,240,240,1);background-image: url('./img/patron.jpg');background-size:200px 200px ;width: 200px;margin-left:auto;height: 300px;margin-top: 10px;float:none;margin:auto;box-shadow: -2px 2px 1px 0px rgba(100,100,100,.3);
+		          border-color: rgba(0,0,0,.1);">
+		            
+		          </div>
+          		  </div>
+        		</div>
+        	</div>
+        <script>
+        mostrarOpciones();
+          function crearHojales(alto,ancho,num){
+        	  
+        	var divH = document.createElement("div");
+        	divH.style.width="30px";
+        	divH.style.float="left";
+        	divH.style.height=alto+"px";
+            var hojales = 5;
+            var distancia = 5;
+            var total = alto;
+            var cant = Math.floor((Math.floor(alto/5)-3)/3);
+            var distanciaOriginal = alto - (cant*15+15);
+            var div = document.createElement("div");
+            div.style.height = (total-distanciaOriginal)+"px";
+            div.style.marginTop = distanciaOriginal/2+"px";
+            for(var i = 0;i<cant+1;i++){
+              var hojal = document.createElement("div");
+              hojal.style.float="left";
+              hojal.style.height="10px";
+              if(i!=0){
+                hojal.style.marginTop="5px";
+              }
+              hojal.style.width="15px";
+              hojal.style.marginLeft="-9px";
+              hojal.style.marginRight="22px";
+              //hojal.style.backgroundColor="#e7592dea";
+              hojal.style.backgroundImage="url('./img/Hojal"+num+".png')";
+              hojal.style.backgroundSize="100% auto"
+              hojal.style.backgroundPosition="center";
+              hojal.style.backgroundRepeat="no-repeat";
+              div.appendChild(hojal);
+            }
+            divH.appendChild(div)
+            divH.setAttribute("id","hojales");
+            document.getElementById("cuaderno").appendChild(divH);
+            document.getElementById("cuaderno").style.marginTop=((400-alto)/2)+"px";
+            //document.getElementById("cuaderno").style.marginLeft=((((document.documentElement.clientWidth-20)/2)-ancho)/2)+"px";
+          }
+          crearHojales(297,210);
+          
+          function crearHojalesHorizontal(alto,ancho,num){
+          	var divH = document.createElement("div");
+          	divH.style.width=ancho+"px";
+          	divH.style.float="left";
+          	divH.style.height="30px";
+              var hojales = 5;
+              var distancia = 5;
+              var total = ancho;
+              var cant = Math.floor((Math.floor(ancho/5)-3)/3);
+              var distanciaOriginal = ancho - (cant*15+15);
+              var div = document.createElement("div");
+              div.style.width = (total-distanciaOriginal)+"px";
+              div.style.height = "30px";
+              div.style.marginLeft = distanciaOriginal/2+"px";
+              for(var i = 0;i<cant+1;i++){
+                var hojal = document.createElement("div");
+                hojal.style.float="left";
+                hojal.style.width="10px";
+                if(i!=0){
+                  hojal.style.marginLeft="5px";
+                }
+                hojal.style.height="15px";
+                hojal.style.marginTop="-7px";
+                hojal.style.marginBottom="22px";
+                //hojal.style.backgroundColor="#e7592dea";
+                hojal.style.backgroundImage="url('./img/Hojal"+num+"H.png')";
+                hojal.style.backgroundSize=" auto 100%";
+                hojal.style.backgroundPosition="center";
+                hojal.style.backgroundRepeat="no-repeat";
+                div.appendChild(hojal);
+              }
+              divH.appendChild(div)
+              divH.setAttribute("id","hojales");
+              document.getElementById("cuaderno").appendChild(divH);
+              document.getElementById("cuaderno").style.marginTop=((400-alto)/2)+"px";
+              //document.getElementById("cuaderno").style.marginLeft=((((document.documentElement.clientWidth-20)/2)-ancho)/2)+"px";
+            }
+          
+          function cambiarTam(){
+        	var tam = document.getElementById("tamCuaderno").value;
+        	var ancho = parseFloat(tam.split('x')[0]);
+        	var alto = parseFloat(tam.split('x')[1]);
+        	document.getElementById("cuaderno").style.width = ancho*10+"px";
+        	document.getElementById("cuaderno").style.height = alto*10+"px";
+        	document.getElementById("cuaderno").removeChild(document.getElementById("hojales"));
+        	if(document.getElementById("orientacion").value=="Vertical"){
+        		crearHojales(alto*10,ancho*10,parseInt(document.getElementById("tipo").value));
+        	}else{
+        		crearHojalesHorizontal(alto*10,ancho*10,parseInt(document.getElementById("tipo").value));
+        	}
+          }
+          cambiarTam();
+          
+          //setInterval(cambiarTam,50);
+          
+          function cambiarTarj(){
+        	var tam = document.getElementById("tamCuaderno4").value;
+        	var ancho = parseFloat(tam.split('x')[0]);
+        	var alto = parseFloat(tam.split('x')[1]);
+        	document.getElementById("cuaderno2").style.width = ancho*10+"px";
+        	document.getElementById("cuaderno2").style.height = alto*10+"px";
+        	if(document.getElementById("tipo4").value == "1"){
+        		document.getElementById("cuaderno2").style.borderRadius = "0px";
+        	}else{
+        		document.getElementById("cuaderno2").style.borderRadius = "3px";
+        	}
+        	
+          }
+          
+        </script>
+			
+			
+		</div>
+	</div>
+</div>
+<script>
+</script>

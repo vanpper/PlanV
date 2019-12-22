@@ -1,0 +1,70 @@
+.ivan{
+    margin: 0;
+    background-color:  rgba(30,30,30,1);
+    min-width: 100vw;
+    min-height: 100vh;
+    
+}
+
+
+.centrar input,.centrar select,.centrar button{
+    padding: 5px;
+    width: 100%;
+    border-style:solid;
+    border-width:0px 0px 1px 0px;
+    background-color:rgba(0,0,0,0);
+}
+
+.centrar label{
+    color: rgba(30,30,30,30);
+}
+
+.centrar button{
+    border-radius: 5px;
+    background-color:  #13aff0;
+}
+
+.centrar form{
+       margin: 0 auto;
+    width: 350px;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: rgb(240,240,240);
+    font-family: 'Letter Gothic Std Medium';
+    font-weight: normal;
+}
+
+.center{
+    text-align: center;
+}
+
+.barra{
+    background-color: black;
+    height: 50px;
+}
+
+.vacio{
+	height: 100px;
+    line-height:100px;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 1000px;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: white;
+    font-family:'Letter Gothic Std Medium';
+	font-weight:normal;
+}
+
+.vacio>span {
+	display:inline-block;
+	vertical-align:middle;
+	line-height:normal;
+}
+
+#lbvacio{
+	

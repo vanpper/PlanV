@@ -1,0 +1,186 @@
+:root{
+	--colorPrincipal:var(--second-color);
+}
+
+.bloqueLista{}
+
+.agregarCarrito{
+	float: right;
+    border-style: none;
+    background-color: rgba(0,0,0,0);
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 0px;
+    height: auto;
+    align-items: center;
+    vertical-align: top;
+    height: 30px;
+    width: 30px;
+    line-height: 35px;
+}
+
+.agregarCarrito:hover{
+	background-color:var(--second-color);
+	color:white;
+}
+
+.areaDescripcion{
+	width: 100%;
+    resize: none;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0);
+    user-select: none;
+    border-style: none;
+}
+
+.btAgregarProducto{
+	border-style: none;
+    background-color: var(--colorPrincipal);
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    float: right;
+    border-radius: 3px;
+    margin-right: 4px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+/* The container */
+.container {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  margin-top:0px;
+  background-color: #ccc;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 10px;
+  top: 2.5px;
+  width: 10px;
+  height: 20px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.agregarImagen{
+	width:100%;
+	height:100%;
+	text-align:center;
+	align-items: center;
+	display: grid;
+}
+
+.agregarImagen:hover{
+	border-style: dashed;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.carrito-vacio{
+	margin: 0 auto;
+    /* border: 1px solid green; */
+    height: 100px;
+    line-height:100px;
+    width: 500px;
+    text-align: center;
+}
+
+.carrito-vacio>span {
+	display:inline-block;
+	vertical-align:middle;
+	line-height:normal;
+}
+
+#lbcarritovacio{
+	font-size: 20px;
+}
+
+
+.btPaginar{
+	border-style: none;
+    background-color: rgb(36, 35, 35);
+    color: rgb(240, 240, 240);
+    margin-left: 2px;
+    margin-right: 2px;
+    min-width: 20px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 5px;
+}
+
+.btPaginarSel{
+	border-style: none;
+    background-color: var(--colorPrincipal);
+    color: rgb(240, 240, 240);
+    margin-left: 2px;
+    margin-right: 2px;
+    min-width: 20px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 5px;
+}
+
+.btAnt{
+	border-radius: 50px 0px 0px 50px;
+}
+
+.btPos{
+	border-radius: 0px 50px 50px 0px;
+}
+
+.btPaginar:hover{
+    background-color: var(--colorPrincipal);
+}
+

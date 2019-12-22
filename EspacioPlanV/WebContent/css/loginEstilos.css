@@ -1,0 +1,61 @@
+
+
+.barra-azul{
+    height: 250px;
+    background-color:  #13aff0;
+}
+
+.formLogin{
+	font-family:'Letter Gothic Std Medium';
+	font-weight:normal;
+}
+
+.formLogin form{
+    margin: 0 auto;
+    width: 400px;
+    height: 350px;
+    padding: 20px;
+    margin-top: -150px;
+    background-color: gainsboro;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.formLogin input,.formLogin select,.formLogin button, .button{
+   padding: 5px;
+    width: 280px;
+    border-radius: 5px;
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.formLogin label,.formLogin a{
+    
+    color: rgba(30,30,30,30);
+    margin-left: 5%;
+}
+    
+}
+
+.formLogin button{
+    border-radius: 5px;
+    height: 35px;
+    width: 295px;
+    background-color:  #13aff0;
+}
+
+.left-align{
+    
+    text-align: left;
+}
+
+.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    width: 280px;
+    height: 25px;
+    text-decoration:none;
+}
+

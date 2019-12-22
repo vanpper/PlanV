@@ -1,0 +1,198 @@
+@charset "ISO-8859-1";
+
+#espacioPedidos{
+	float:left;
+	width: 100%;
+	height: 820px;	
+
+}
+
+#cuadroPedido{
+	float:left;
+	margin-top: 10px;
+	height: 800px;	
+	margin-left:10px;
+}
+
+.listaPedidos{
+	float:left;
+	height: 100%;
+	width: 30%;	
+	background-color: rgba(20,20,20,1);
+}
+
+.chatPedido{
+	float:left;
+	height: 100%;
+	width: 70%;	
+	background-color: rgba(25,25,25,1);
+}
+
+.trianguloCliente{
+    width: 0;
+    height: 0;
+    border-right: 10px solid var(--second-color);
+    border-top: 0px solid transparent;
+    border-bottom: 10px solid transparent;
+    float: left;
+}
+
+.chatCliente{
+	padding:5px;
+    float: left;
+    background-color: var(--second-color);
+    border-radius: 0px 10px 10px 10px;
+}
+
+.trianguloAdmin {
+    width: 0;
+    height: 0;
+    border-left: 10px solid #0b8fc5;
+    border-top: 0px solid transparent;
+    border-bottom: 10px solid transparent;
+    float: right;
+}
+
+.chatAdmin{
+	padding:5px;
+    float: right;
+    background-color: #0b8fc5;
+    border-radius: 10px 00px 10px 10px;
+}
+
+.elementoCorreo{
+	width:100%;
+	height:50px;
+	float:left;
+	border:solid;
+	border-color:rgba(100,100,100,1);
+	overflow:hidden;
+	border-width: 0px 0px 1px 0px;
+	background-color:rgba(240,240,240);
+}
+
+.elementoCorreoSel{
+	width:100%;
+	height:50px;
+	float:left;
+	border:solid;
+	border-color:rgba(100,100,100,1);
+	overflow:hidden;
+	border-width: 0px 0px 1px 0px;
+	background-color:rgba(240,240,240);
+}
+
+.elementoCorreo:hover{
+	z-index:1;
+	cursor:pointer;
+	box-shadow: 0px -0px 5px 0px rgba(0,0,0,0.75);
+	background-color:rgba(230,230,230,1);
+	transform:scale(1.01)
+}
+
+.tipoCorreo{
+	width:80px;
+	height:30px;
+	margin-top:10px;
+	line-height:30px;
+	float:left;
+	overflow:hidden;
+	font-weight: bold;
+	color: rgba(30,30,30,1);
+	background-color:#13AFF0;
+	text-align:center;
+	font-family: Playlist;
+	font-size:1.4em;
+	margin-left:10px;
+	color:"rgba(31,31,31,1)");
+}
+
+.userCorreo{
+	width:20%;
+	height:50px;
+	line-height:50px; 
+	float:left;
+	overflow:hidden;
+	margin-left:10px;
+	font-weight: bold;
+}
+
+.mensajeCorreo{
+	width:40%;
+	height:50px;
+	line-height:50px; 
+	float:left;overflow:hidden;
+	margin-left:5px;
+}
+
+.gy{
+	padding:0px;
+	background-color:rgba(0,0,0,0);
+	border-style:none;
+	height:50px;
+	line-height:50px; 
+	float:right;
+	overflow:hidden;
+	margin-right:20px;
+}
+
+.gy:hover{
+	color:var(--second-color);
+}
+
+.sinLeer{
+	height:50px;
+	line-height:50px; 
+	float:right;
+	overflow:hidden;
+	text-align:center;
+	margin-right:15px;
+}
+
+.fechaCorreo{
+	height:50px;
+	line-height:50px; 
+	float:right;overflow:hidden;
+	font-weight: bold;
+	margin-right:20px;
+	text-align:center;
+}
+
+.adjuntar{
+	float:left;
+	height: 40px;
+	line-height: 40px;
+	width:40px;
+	transition:all 1s;
+	overflow:hidden;
+	background-color: rgba(200,200,200,1);
+}
+
+.adjuntar:hover{
+	width:110px;
+	background-color:#13AFF0;
+}
+
+.icono{
+	float:left;
+	height: 40px;
+	line-height: 40px;
+	width:40px;
+	text-align:center;
+	background-color: rgba(200,200,200,0);
+}
+
+.adjuntar2{
+	float:left;
+	height: 40px;
+	line-height: 40px;
+	width:40px;
+	transition:all 1s;
+	overflow:hidden;
+	background-color: rgba(200,200,200,1);
+}
+
+.adjuntar2:hover{
+	width:180px;
+	background-color:#13AFF0;
+}

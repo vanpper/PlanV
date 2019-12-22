@@ -1,0 +1,315 @@
+.body-ver-producto{
+    margin: 0;
+    background-color:  rgba(30,30,30,1);
+    min-width: 100vh;
+    min-height: 100vh;
+}
+
+.body-ver-producto .visor{
+    /*border: 1px solid blue;*/
+    margin: 0 auto;
+    border-radius: 5px;
+    height: 800px;
+    width: 1100px;
+    /*position: absolute;*/
+    margin-top: 50px;
+    /*margin-left: 125px;
+    margin-bottom: 100px;*/
+    /*background-color: gainsboro;*/
+}
+
+.body-ver-producto .imagenes-laterales-miniaturas{
+    border: 1px solid grey;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 5px 0 0 0;
+    height: 580px;
+    width: 88px;
+    float: left;
+    background-color: gainsboro;
+}
+
+.body-ver-producto ::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.body-ver-producto ::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.body-ver-producto ::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+.body-ver-producto ::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.body-ver-producto .contenedor-imagen{
+    position: relative;
+    height: 75px;
+    width: 75px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border: 1px solid grey;
+    background-color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+
+.body-ver-producto .imagen-producto-miniatura{
+    height: auto;
+    max-width: 65px;
+	max-height: 65px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.element::-webkit-scrollbar { width: 0 !important }
+
+.body-ver-producto .mas-imagenes{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.body-ver-producto #numeroImagenesRestantes{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    cursor: pointer;
+}
+
+.body-ver-producto .imagen-grande{
+    position: relative;
+    border: 1px solid grey;
+    
+    width: 600px;
+    height: 580px;
+    float: left;
+    left: -1px;
+    background-color: gainsboro;
+}
+
+.body-ver-producto .imagen-producto-grande{
+    height: auto;
+    max-width: 580px;
+    max-height: 560px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.body-ver-producto .visor-datos{
+    float: left;
+    height: 290px;
+    width: 400px;
+    /*border: 1px solid grey;*/
+    margin-left: -2px;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+.body-ver-producto .nombre-producto{
+    /*border: 1px solid black;*/
+    height: 130px;
+    text-align: left;
+    font-family: 'Letter Gothic Std Medium';
+    font-size: 30px;
+    word-wrap: break-word;
+}
+
+.body-ver-producto .precio-viejo{
+    margin-top: 10px;
+    /*border: 1px solid black;*/
+	font-size: 20px;
+    font-family: 'Letter Gothic Std Medium';
+    size: 20px;
+    color:grey;
+    text-decoration:line-through;
+}
+
+.body-ver-producto .precio-viejo #precioProductoViejo{
+	text-decoration:line-through;
+}
+
+.body-ver-producto .precio-producto{
+    float: left;
+    margin-top: 10px;
+    /*border: 1px solid black;*/
+    height: 55px;
+    max-width: 225px;
+    text-align: left;
+    font-family: 'Letter Gothic Std Medium';
+    font-size: 50px;
+}
+
+.body-ver-producto .descuento-producto{
+    float: left;
+    margin-top: 25px;
+    margin-left: 10px;
+    /*border: 1px solid black;*/
+    height: 25px;
+    width: 100px;
+    text-align: left;
+    font-family: 'Letter Gothic Std Medium';
+    font-size: 20px;
+    color:green;
+}
+
+.body-ver-producto .buy-section{
+    float: left;
+    height: 290px;
+    width: 400px;
+    /*border: 1px solid grey;*/
+    margin-left: -2px;
+    margin-top: -1px;
+    border-radius: 3px;
+    padding: 20px;
+    font-family: 'Letter Gothic Std Medium';
+    font-size: 20px;
+}
+
+.body-ver-producto .cantidad-section{
+    float:left;
+    /*border: 1px solid black;*/
+}
+
+.body-ver-producto #txtCantidad{
+    height: 30px;
+    width: 50px;
+}
+
+.body-ver-producto .cantidad-disponible{
+    position: absolute;
+    float: left;
+    /* border: 1px solid black; */
+    margin-top: 35px;
+    font-size: 15px;
+    color: gray;
+}
+
+.body-ver-producto .buttons-section{
+    float: left;
+    /* margin-left: -140px; */
+    margin-top: 70px;
+    /* border: 1px solid black; */
+    width: 350px;
+    height: 100px;
+}
+
+.body-ver-producto .buttons-section .boton{
+    width: 350px;
+    height: 45px;
+    margin-bottom: 15px;
+
+    box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#13aff0;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+    
+}
+
+.body-ver-producto .buttons-section .boton:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+
+.body-ver-producto .buttons-section .boton:active {
+	position:relative;
+	top:1px;
+}
+
+.body-ver-producto .barra-derecha{
+    float:left;
+    border: 1px solid gray;
+    border-radius: 0 5px 0 0;
+    margin-left: -2px;
+    width: 408px;
+    height: 580px;
+    background-color: gainsboro;
+}
+
+.body-ver-producto .descripcion-section{
+    float:left;
+    width: 1094px;
+    height: auto;
+    background-color: gainsboro;
+    border: 1px solid gray;
+    border-radius: 0  0 5px 5px;
+    margin-bottom: 50px;
+}
+
+.body-ver-producto .descripcion-text{
+    padding:20px;
+    text-align: left;
+    font-family: 'Letter Gothic Std Medium';
+    font-size: 15px;
+    ;word-wrap: break-word;
+}
+
+.vacio{
+	height: 100px;
+    line-height:100px;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 1000px;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: white;
+    font-family:'Letter Gothic Std Medium';
+	font-weight:normal;
+}
+
+.vacio>span {
+	display:inline-block;
+	vertical-align:middle;
+	line-height:normal;
+}
+
+#lbvacio{
+	font-size: 20px;
+}

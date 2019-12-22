@@ -1,0 +1,393 @@
+@font-face {
+    font-family: 'Letter Gothic Std Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Letter Gothic Std Medium'), url('../font/LetterGothicStd.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Letter Gothic Std Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Letter Gothic Std Bold'), url('../font/LetterGothicStd-Bold.woff') format('woff');
+}
+        
+
+body{
+	font-family:'Letter Gothic Std Medium';
+	font-weight:normal;
+    padding: 0%;
+    background-color: rgba(30,30,30,1);
+}
+
+@font-face {
+    font-family: Playlist;
+    src:url('../font/Playlist\ Caps.otf')
+}
+
+:root {
+    --second-color: #13aff0;
+    --second-color-hover: #0d91c5;
+}
+
+.barra{
+    height: 50px; 
+    width: 100%; 
+    background-color: #171717;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: rgba(70,70,70,1);
+}
+
+.elementoBarra{
+    width: 120px;
+    height: 100%;
+    float: right;
+}
+
+button{
+    cursor: pointer;
+}
+
+.singIn{
+    background-color: var(--second-color);
+    height: 80%;
+    width: 100px;
+    margin-right: 10px;
+    text-align: center;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    float: right;
+    border-radius: 3px;
+    font-size: 10px;
+    border-style: none;
+}
+
+.singIn .glyphicon{
+    font-size: 15px;
+}
+
+.singIn label{
+    vertical-align: middle;
+}
+
+.singIn:hover{
+    background-color: var(--second-color-hover);
+}
+
+.singUp{
+    background-color: rgba(0,0,0,0);
+    margin-right: 10px;
+    text-align: center;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    float: right;
+    border-radius: 3px;
+    font-size: 10px;
+    border-style: none;
+}
+
+.singUp .glyphicon{
+    font-size: 15px;
+    vertical-align: text-bottom;
+}
+
+.singUp label{
+    vertical-align: middle;
+}
+
+.singUp:hover .glyphicon{
+    color: var(--second-color);
+}
+
+.carrito{
+    background-color: rgba(0,0,0,0);
+    margin-right: 10px;
+    text-align: center;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    float: right;
+    border-radius: 3px;
+    font-size: 10px;
+    border-style: none;
+}
+
+.carrito .glyphicon{
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.carrito:hover .glyphicon{
+    color: var(--second-color);
+}
+
+.more{
+    background-color: rgba(0,0,0,0);
+    margin-right: 10px;
+    text-align: center;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    float: right;
+    border-radius: 3px;
+    font-size: 10px;
+    border-style: none;
+}
+
+.more .glyphicon{
+    font-size: 15px;
+    vertical-align: sub;
+}
+
+.more:hover .glyphicon{
+    color: var(--second-color);
+}
+
+.counter{
+    background-color: rgba(150,0,0,1);
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    position: relative;
+    top: -8px;
+    left: -8px;
+}
+
+.logo{
+    float: left;
+    margin-left: 10px;
+    color: var(--second-color);
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    border-style: none;
+    background-color: rgba(0,0,0,0);
+    font-size: 30px; 
+    font-family: Playlist;
+}
+
+.barraCategorias{
+    height: 30px; 
+    width: 100%; 
+    background-color: #242323;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: rgba(70,70,70,1);
+    text-align: center;
+}
+
+.categoria{
+    background-color: rgba(0,0,0,0);
+    margin-right: 10px;
+    text-align: center;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    font-size: 10px;
+    border-style: none;
+    font-size: 10px;
+}
+
+.categoria:hover{
+    background-color:  rgba(100,100,100,1);
+}
+
+.muroHome{
+    width: 100%;
+    height: 400px;
+    line-height: 400px;
+    text-align: center;
+    background-color: var(--second-color);
+    font-family: Playlist;
+    font-size: 15ex;
+}
+
+.muroCategorias{
+    width: 100%;
+    height: 400px;
+    line-height: 400px;
+    text-align: center;
+    font-family: Playlist;
+    font-size: 15ex;
+}
+
+a{
+	cursor:pointer;
+}
+
+a label{
+	cursor:pointer;
+}
+
+
+a:hover{
+    text-decoration: none;
+}
+
+.categoriaMenu{
+    width: 21.5%;
+    margin-left: 3%;
+    float: left;
+    height: 350px;
+    margin-top: 25px;
+    background-color: #0d91c5;
+    background-size: cover;
+    color:rgba(0,0,0,0);
+    font-size: 30px;
+}
+
+.cubrirCategorias{
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(200,200,200,.7);
+    color:#0d91c5;
+    opacity: 0;
+    cursor:pointer;
+}
+
+.cubrirCategorias:hover{
+    opacity: 1;
+}
+
+.muroCatalogo{
+    width: 100%;
+    height: 400px;
+    line-height: 400px;
+    text-align: center;
+    background-color: var(--second-color);
+    font-family: Playlist;
+    font-size: 15ex;
+    background-size: cover;
+    background-position-y: center;
+}
+
+.cubrirCatalogo{
+    width: 100%; 
+    height: 100%; 
+    background-color: var(--second-color);
+}
+
+.bloque{
+    background-color: #171717;
+    float: left;
+    width: 100%;
+}
+
+.elementoLista{
+    
+    border-width: 1px;
+    border-color: rgba(70,70,70,1);
+    margin-top: 4px;
+    margin-left: 5px;
+    color: var(--second-color);
+    cursor: pointer;
+
+}
+
+.elementoLista:hover{
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.37);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.37);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.37);
+}
+
+.imgElem{
+    width: 100%; float:left;opacity: 0;
+    height: 70%;
+    transition:height 1s;
+}
+
+.elementoLista:hover .imgElem{
+    height: 30%;
+}
+
+.bloqueDesc{
+    background-color: rgba(0,0,0,.2);
+    width: 100%;height: 100%;float: left;
+    transition:height 1s;
+}
+
+.elementoLista:hover .bloqueDesc{
+}
+
+.cuadro:hover{
+	
+}
+
+.barra ul{
+	list-style: none;
+}
+
+.menu{
+	margin: 0;
+    height: 50px;
+    float: right;
+    width: 1px;
+}
+
+.menu li a:hover{
+	color: #13aff0;
+	transition: all .3s;
+}
+
+.submenu{
+	position: absolute;
+	width: 200px;
+	background: black;
+	border-radius: 3px;
+	right: 0px; 
+	top: 50px;
+	padding: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.submenu li{
+	text-align: center;
+}
+
+.submenu li a{
+	display: block;
+	padding: 20px;
+	text-decoration: none;
+	font: Playlist;
+	font-weight: bold;
+	color: white;
+}
+
+.menu:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+.btPop:hover{
+background-color: var(--second-color)
+}
+
+#cuadros::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+    height: 0px;
+}
+
+#lista::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+    height: 0px;
+}
+
+#bodyRegistrarse::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+    height: 0px;
+}

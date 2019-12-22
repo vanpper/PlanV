@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Letter Gothic Std Medium';
+    src: url(LetterGothicStd-Bold.woff);
+  }
+
+.body-rc3{
+    margin: 0;
+    background-color:  rgba(30,30,30,1);
+}
+
+.body-rc3 .ventana-central{
+    margin: 0 auto;
+    border-radius: 5px;
+    height: 200px;
+    width: 280px;
+    margin-top: 50px;
+    background-color: gainsboro;
+    font-family: 'Letter Gothic Std Medium';
+}
+
+.body-rc3 .d1, .d2, .d3, .d4, .d5{
+
+    float:left;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 300px;
+}
+
+.body-rc3 .d2{
+    margin-top: 1px;
+}
+
+.body-rc3 .d2 input{
+    width: 250px;
+}
+
+.body-rc3 .d4 input{
+    width: 250px;
+}
+
+.body-rc3 .d3{
+    margin-top: 20px;
+}
+
+.body-rc3 .d4{
+    margin-top: 1px;
+}
+
+.body-rc3 .d5{
+    margin-top: 30px;
+}
+
+.body-rc3 .d5 input{
+  
+    text-align: center;
+    color: black;
+    width: 250px;
+    height: 25px;
+    font-family: 'Letter Gothic Std Medium';
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+    background-color:  #13aff0;
+}
